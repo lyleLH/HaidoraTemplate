@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
+
+target '${POD_NAME}', :exclusive => true do
+  ${INCLUDED_PODS}
+  ${INCLUDED_PODVERSIONS}
+end
+
+target '${POD_NAME}_Tests', :exclusive => true do
+  ${INCLUDED_PODS}
+  ${INCLUDED_PODVERSIONS}
+end
