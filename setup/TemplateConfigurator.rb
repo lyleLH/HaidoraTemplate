@@ -70,30 +70,30 @@ module Pod
     def run
       @message_bank.welcome_message
       #添加pods
-      case self.ask_with_answers("add HaidoraAlertViewManager to PodFile",["Yes","No"]).to_sym
-        when :yes
-          self.add_pod_to_podfile "HaidoraAlertViewManager"
-      end
-      case self.ask_with_answers("add HaidoraProgressHUDManager to PodFile",["Yes","No"]).to_sym
-        when :yes
-          self.add_pod_to_podfile "HaidoraProgressHUDManager"
-      end
-      case self.ask_with_answers("add HaidoraTableViewManager to PodFile",["Yes","No"]).to_sym
-        when :yes
-          self.add_pod_to_podfile "HaidoraTableViewManager"
-      end
-      case self.ask_with_answers("add HaidoraPaging to PodFile",["Yes","No"]).to_sym
-        when :yes
-          self.add_pod_to_podfile "HaidoraPaging"
-      end
-      case self.ask_with_answers("add UICKeyChainStore to PodFile",["Yes","No"]).to_sym
-        when :yes
-          self.add_pod_to_podfile "UICKeyChainStore"
-      end
-      case self.ask_with_answers("add R(Localizable,Images.xcassets to Class) to PodFile",["Yes","No"]).to_sym
-        when :yes
-          self.add_pod_to_podfile "R"
-      end
+      # case self.ask_with_answers("add HaidoraAlertViewManager to PodFile",["Yes","No"]).to_sym
+      #   when :yes
+      #     self.add_pod_to_podfile "HaidoraAlertViewManager"
+      # end
+      # case self.ask_with_answers("add HaidoraProgressHUDManager to PodFile",["Yes","No"]).to_sym
+      #   when :yes
+      #     self.add_pod_to_podfile "HaidoraProgressHUDManager"
+      # end
+      # case self.ask_with_answers("add HaidoraTableViewManager to PodFile",["Yes","No"]).to_sym
+      #   when :yes
+      #     self.add_pod_to_podfile "HaidoraTableViewManager"
+      # end
+      # case self.ask_with_answers("add HaidoraPaging to PodFile",["Yes","No"]).to_sym
+      #   when :yes
+      #     self.add_pod_to_podfile "HaidoraPaging"
+      # end
+      # case self.ask_with_answers("add UICKeyChainStore to PodFile",["Yes","No"]).to_sym
+      #   when :yes
+      #     self.add_pod_to_podfile "UICKeyChainStore"
+      # end
+      # case self.ask_with_answers("add R(Localizable,Images.xcassets to Class) to PodFile",["Yes","No"]).to_sym
+      #   when :yes
+      #     self.add_pod_to_podfile "R"
+      # end
 
       #配置工程
       ConfigureIOS.perform(configurator: self)
