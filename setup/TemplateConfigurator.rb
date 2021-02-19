@@ -70,6 +70,12 @@ module Pod
     def run
       @message_bank.welcome_message
       #添加pods
+      
+      case self.ask_with_answers("add YKCategoryComponent to PodFile",["Yes","No"]).to_sym
+        when :yes
+          self.add_pod_to_podfile "YKCategoryComponent"
+      end
+      
       # case self.ask_with_answers("add HaidoraAlertViewManager to PodFile",["Yes","No"]).to_sym
       #   when :yes
       #     self.add_pod_to_podfile "HaidoraAlertViewManager"
