@@ -5,7 +5,7 @@ source 'http://gitlab.yeahka.com/App/iOS/YeahkaNativeComSpecsIndex.git'
 
 platform :ios, '10.0'
 
-target '${POD_NAME}', :exclusive => true do
+target '${POD_NAME}' do
   ${INCLUDED_PODS}
   # ${INCLUDED_PODVERSIONS}
 end
