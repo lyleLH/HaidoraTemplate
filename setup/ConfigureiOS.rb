@@ -32,7 +32,7 @@ module Pod
       }).run
 
       #移动工程位置
-      `mv ./templates/ios/Example/* ./`
+      `mv ./templates/ios/* ./`
     end
   end
 end
