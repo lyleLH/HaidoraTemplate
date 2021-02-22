@@ -6,7 +6,7 @@
 //  Copyright © 2021 PROJECT_OWNER. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseNavigationViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
