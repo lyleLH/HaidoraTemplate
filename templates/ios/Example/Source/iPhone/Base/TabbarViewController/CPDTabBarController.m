@@ -54,12 +54,23 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
     [firstViewController cyl_setNavigationBarHidden:YES];
     
     
+    CPDViewController *secondViewController = [[CPDViewController alloc] init];
+    UIViewController *secondNavigationController = [[CPDNavigationViewController alloc]
+                                                   initWithRootViewController:secondViewController];
+    
+    CPDViewController *thirdViewController = [[CPDViewController alloc] init];
+    UIViewController *thirdNavigationController = [[CPDNavigationViewController alloc]
+                                                   initWithRootViewController:thirdViewController];
+    
+    CPDViewController *fourthViewController = [[CPDViewController alloc] init];
+    UIViewController *fourthNavigationController = [[CPDNavigationViewController alloc]
+                                                   initWithRootViewController:fourthViewController];
     [fourthNavigationController cyl_setHideNavigationBarSeparator:YES];
     NSArray *viewControllers = @[
                                  firstNavigationController,
-                                 firstNavigationController,
-                                 firstNavigationController,
-                                 firstNavigationController
+                                 secondNavigationController,
+                                 thirdNavigationController,
+                                 fourthNavigationController
                                  ];
     return viewControllers;
 }

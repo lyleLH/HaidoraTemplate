@@ -33,6 +33,7 @@
 		C841DAB225E3821C0083FFA3 /* CPDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DAB125E3821C0083FFA3 /* CPDNavigationViewController.m */; };
 		C841DAB725E382560083FFA3 /* CPDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DAB625E382560083FFA3 /* CPDViewController.m */; };
 		C841DABC25E3826D0083FFA3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DABB25E3826D0083FFA3 /* BaseViewController.m */; };
+		C841DAD825E385510083FFA3 /* UIColor+CPDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DAD525E385510083FFA3 /* UIColor+CPDExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +79,6 @@
 		AB23E0001BA953B700F13CE2 /* PROJECTStringUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROJECTStringUtility.h; sourceTree = "<group>"; };
 		AB23E0011BA953B700F13CE2 /* PROJECTStringUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROJECTStringUtility.m; sourceTree = "<group>"; };
 		AB23E0021BA953B700F13CE2 /* PROJECTUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROJECTUtility.h; sourceTree = "<group>"; };
-		AB23E0241BA953D300F13CE2 /* PROJECTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROJECTCategory.h; sourceTree = "<group>"; };
 		AB23E0251BA953E600F13CE2 /* PROJECTVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROJECTVendor.h; sourceTree = "<group>"; };
 		AB23E0331BA955BA00F13CE2 /* CPDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDLoginViewController.h; sourceTree = "<group>"; };
 		AB23E0341BA955BA00F13CE2 /* CPDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDLoginViewController.m; sourceTree = "<group>"; };
@@ -94,6 +94,9 @@
 		C841DAB625E382560083FFA3 /* CPDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDViewController.m; sourceTree = "<group>"; };
 		C841DABA25E3826D0083FFA3 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		C841DABB25E3826D0083FFA3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C841DAD525E385510083FFA3 /* UIColor+CPDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CPDExtension.m"; sourceTree = "<group>"; };
+		C841DAD625E385510083FFA3 /* UIColor+CPDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CPDExtension.h"; sourceTree = "<group>"; };
+		C841DAD725E385510083FFA3 /* ShellProjectCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellProjectCategory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +224,9 @@
 		AB23DFF21BA953B700F13CE2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				AB23E0241BA953D300F13CE2 /* PROJECTCategory.h */,
+				C841DAD725E385510083FFA3 /* ShellProjectCategory.h */,
+				C841DAD625E385510083FFA3 /* UIColor+CPDExtension.h */,
+				C841DAD525E385510083FFA3 /* UIColor+CPDExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -496,6 +501,7 @@
 				AB23E01B1BA953B700F13CE2 /* PROJECTStringUtility.m in Sources */,
 				C841DABC25E3826D0083FFA3 /* BaseViewController.m in Sources */,
 				AB23E0381BA955E300F13CE2 /* CPDLoginViewModel.m in Sources */,
+				C841DAD825E385510083FFA3 /* UIColor+CPDExtension.m in Sources */,
 				C841DAA825E381170083FFA3 /* BaseNavigationViewController.m in Sources */,
 				AB23E0181BA953B700F13CE2 /* PROJECTConfig.m in Sources */,
 			);
