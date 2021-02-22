@@ -60,6 +60,17 @@
 
 - (void)prepareForView
 {
+    UIButton * testLoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [testLoginButton setFrame:CGRectMake(25, ([UIScreen mainScreen].bounds.size.height - 44)/2.0, [UIScreen mainScreen].bounds.size.width - 25*2, 44)];
+    [testLoginButton setTitle:@"登录(测试页面转场)" forState:UIControlStateNormal];
+    [testLoginButton setTitleColor:[UIColor yk_themeColor] forState:UIControlStateNormal];
+    [testLoginButton setBackgroundColor:[UIColor yk_lightBlueBgColor]];
+    [testLoginButton addTarget:self action:@selector(loggedIn) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testLoginButton];
+}
+
+- (void)loggedIn {
+    self.loginCallBack(YES);
 }
 
 - (void)prepareForAction

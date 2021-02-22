@@ -15,6 +15,10 @@
     return  [UIColor yk_colorFromHexString:@"#E1EFFA"];
 }
 
++ (UIColor *)yk_themeColor {
+    return  [UIColor yk_colorFromHexString:@"#1F9EFF"];
+}
+
 + (UIColor *)yk_colorFromHexString:(NSString *)hexString  {
     unsigned rgbValue = 0;
     NSScanner *scanner = [NSScanner scannerWithString:hexString];

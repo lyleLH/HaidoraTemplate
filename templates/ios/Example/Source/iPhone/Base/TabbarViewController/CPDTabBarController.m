@@ -52,6 +52,7 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
                                                    initWithRootViewController:firstViewController];
     [firstViewController cyl_setHideNavigationBarSeparator:YES];
     [firstViewController cyl_setNavigationBarHidden:YES];
+    firstViewController.navigationItem.title = [NSString stringWithFormat:@"SYTViewController Instance "];
     
     
     CPDViewController *secondViewController = [[CPDViewController alloc] init];

@@ -36,7 +36,7 @@
 - (void)initForApp
 {
     [[PROJECTConfig sharedInstance] initApp];
-    BOOL isLogin = YES;
+    BOOL isLogin = NO;
     if (isLogin)
     {
         [self initForMainViewController];
