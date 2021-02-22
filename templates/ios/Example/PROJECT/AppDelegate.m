@@ -13,7 +13,7 @@
 @interface AppDelegate ()
 
 @property (nonatomic, strong) CPDLoginViewController *loginVC;
-
+@property (nonatomic, strong) CPDTabBarController *tabbarVC;
 @end
 
 @implementation AppDelegate
@@ -72,10 +72,7 @@
 
 - (void)initForMainViewController
 {
-    self.window.rootViewController = [[UIViewController alloc] init];
-    
     CPDTabBarController * tabbarController  = [[CPDTabBarController alloc] initWithContext:@""];
-//    YKNavigationViewController * nav = [[YKNavigationViewController alloc] initWithRootViewController:tabbarController];
     [self.window setRootViewController:tabbarController];
     
 
