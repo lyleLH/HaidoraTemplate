@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "PROJECTConfig.h"
 #import "CPDLoginViewController.h"
-
+#import "CPDTabBarController.h"
 @interface AppDelegate ()
 
 @property (nonatomic, strong) CPDLoginViewController *loginVC;
@@ -36,7 +36,7 @@
 - (void)initForApp
 {
     [[PROJECTConfig sharedInstance] initApp];
-    BOOL isLogin = NO;
+    BOOL isLogin = YES;
     if (isLogin)
     {
         [self initForMainViewController];
@@ -73,6 +73,11 @@
 - (void)initForMainViewController
 {
     self.window.rootViewController = [[UIViewController alloc] init];
+    
+    CPDTabBarController * tabbarController  = [[CPDTabBarController alloc] initWithContext:@""];
+//    YKNavigationViewController * nav = [[YKNavigationViewController alloc] initWithRootViewController:tabbarController];
+    [self.window setRootViewController:tabbarController];
+    
 
     CATransition *animation = [CATransition animation];
     animation.duration = 0.5;

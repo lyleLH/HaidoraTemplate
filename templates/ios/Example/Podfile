@@ -6,6 +6,7 @@ source 'http://gitlab.yeahka.com/App/iOS/YeahkaNativeComSpecsIndex.git'
 platform :ios, '10.0'
 
 target '${POD_NAME}' do
+  pod 'CYLTabBarController'
   ${INCLUDED_PODS}
   # ${INCLUDED_PODVERSIONS}
 end

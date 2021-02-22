@@ -28,6 +28,11 @@
 		AB23E01B1BA953B700F13CE2 /* PROJECTStringUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = AB23E0011BA953B700F13CE2 /* PROJECTStringUtility.m */; };
 		AB23E0351BA955BA00F13CE2 /* CPDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB23E0341BA955BA00F13CE2 /* CPDLoginViewController.m */; };
 		AB23E0381BA955E300F13CE2 /* CPDLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB23E0371BA955E300F13CE2 /* CPDLoginViewModel.m */; };
+		C841DAA825E381170083FFA3 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DAA525E381170083FFA3 /* BaseNavigationViewController.m */; };
+		C841DAAD25E381B50083FFA3 /* CPDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DAAC25E381B50083FFA3 /* CPDTabBarController.m */; };
+		C841DAB225E3821C0083FFA3 /* CPDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DAB125E3821C0083FFA3 /* CPDNavigationViewController.m */; };
+		C841DAB725E382560083FFA3 /* CPDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DAB625E382560083FFA3 /* CPDViewController.m */; };
+		C841DABC25E3826D0083FFA3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DABB25E3826D0083FFA3 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,16 @@
 		AB23E0341BA955BA00F13CE2 /* CPDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDLoginViewController.m; sourceTree = "<group>"; };
 		AB23E0361BA955E300F13CE2 /* CPDLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDLoginViewModel.h; sourceTree = "<group>"; };
 		AB23E0371BA955E300F13CE2 /* CPDLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDLoginViewModel.m; sourceTree = "<group>"; };
+		C841DAA425E381170083FFA3 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		C841DAA525E381170083FFA3 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		C841DAAB25E381B50083FFA3 /* CPDTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDTabBarController.h; sourceTree = "<group>"; };
+		C841DAAC25E381B50083FFA3 /* CPDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDTabBarController.m; sourceTree = "<group>"; };
+		C841DAB025E3821C0083FFA3 /* CPDNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDNavigationViewController.h; sourceTree = "<group>"; };
+		C841DAB125E3821C0083FFA3 /* CPDNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDNavigationViewController.m; sourceTree = "<group>"; };
+		C841DAB525E382560083FFA3 /* CPDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDViewController.h; sourceTree = "<group>"; };
+		C841DAB625E382560083FFA3 /* CPDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDViewController.m; sourceTree = "<group>"; };
+		C841DABA25E3826D0083FFA3 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C841DABB25E3826D0083FFA3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +276,7 @@
 		AB23E00E1BA953B700F13CE2 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				C841DAA225E381170083FFA3 /* Base */,
 				AB23E0261BA9557F00F13CE2 /* CPDLoginViewModule */,
 			);
 			path = iPhone;
@@ -307,6 +323,47 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C841DAA225E381170083FFA3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C841DAA325E381170083FFA3 /* NavigationViewController */,
+				C841DAA625E381170083FFA3 /* TabbarViewController */,
+				C841DAA725E381170083FFA3 /* ViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C841DAA325E381170083FFA3 /* NavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C841DAA425E381170083FFA3 /* BaseNavigationViewController.h */,
+				C841DAA525E381170083FFA3 /* BaseNavigationViewController.m */,
+				C841DAB025E3821C0083FFA3 /* CPDNavigationViewController.h */,
+				C841DAB125E3821C0083FFA3 /* CPDNavigationViewController.m */,
+			);
+			path = NavigationViewController;
+			sourceTree = "<group>";
+		};
+		C841DAA625E381170083FFA3 /* TabbarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C841DAAB25E381B50083FFA3 /* CPDTabBarController.h */,
+				C841DAAC25E381B50083FFA3 /* CPDTabBarController.m */,
+			);
+			path = TabbarViewController;
+			sourceTree = "<group>";
+		};
+		C841DAA725E381170083FFA3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C841DAB525E382560083FFA3 /* CPDViewController.h */,
+				C841DAB625E382560083FFA3 /* CPDViewController.m */,
+				C841DABA25E3826D0083FFA3 /* BaseViewController.h */,
+				C841DABB25E3826D0083FFA3 /* BaseViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +425,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -418,7 +476,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\necho \"build number increase\"\nfi";
+			shellScript = "echo $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\necho \"build number increase\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -427,13 +485,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C841DAB225E3821C0083FFA3 /* CPDNavigationViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
+				C841DAAD25E381B50083FFA3 /* CPDTabBarController.m in Sources */,
 				AB23E0351BA955BA00F13CE2 /* CPDLoginViewController.m in Sources */,
+				C841DAB725E382560083FFA3 /* CPDViewController.m in Sources */,
 				AB23E01A1BA953B700F13CE2 /* PROJECTDateUtility.m in Sources */,
 				AB23E0191BA953B700F13CE2 /* PROJECTConstants.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				AB23E01B1BA953B700F13CE2 /* PROJECTStringUtility.m in Sources */,
+				C841DABC25E3826D0083FFA3 /* BaseViewController.m in Sources */,
 				AB23E0381BA955E300F13CE2 /* CPDLoginViewModel.m in Sources */,
+				C841DAA825E381170083FFA3 /* BaseNavigationViewController.m in Sources */,
 				AB23E0181BA953B700F13CE2 /* PROJECTConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

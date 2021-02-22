@@ -15,7 +15,7 @@ module Pod
       #prefix
       prefix = nil
       loop do
-        prefix = configurator.ask("What is your class prefix")
+        prefix = configurator.ask("What is your class prefix（类前缀）")
 
         if prefix.include?(' ')
           puts 'Your class prefix cannot contain spaces.'.red
