@@ -23,7 +23,7 @@
         default:
             break;
     }
-    return  methodString = [NSString stringWithFormat:@"%@%@?%@",[self apiClassUrlWithAPIClass:class],methodString,[self commanURLParameters]];
+    return  methodString = [NSString stringWithFormat:@"%@%@?%@",[self apiClassUrlWithAPIClass:apiClass],methodString,[self commanURLParameters]];
 }
 
 
