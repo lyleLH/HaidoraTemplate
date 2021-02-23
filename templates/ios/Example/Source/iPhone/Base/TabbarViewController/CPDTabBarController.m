@@ -50,9 +50,9 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
     CPDHomeViewController *homeViewController = [[CPDHomeViewController alloc] init];
     UIViewController *homeNavigationController = [[CPDNavigationViewController alloc]
                                                    initWithRootViewController:homeViewController];
-    [firstViewController cyl_setHideNavigationBarSeparator:YES];
-    [firstViewController cyl_setNavigationBarHidden:YES];
-    firstViewController.navigationItem.title = [NSString stringWithFormat:@"SYTViewController Instance "];
+    [homeViewController cyl_setHideNavigationBarSeparator:YES];
+    [homeViewController cyl_setNavigationBarHidden:YES];
+    homeViewController.navigationItem.title = [NSString stringWithFormat:@"Home"];
     
     
     CPDViewController *secondViewController = [[CPDViewController alloc] init];
