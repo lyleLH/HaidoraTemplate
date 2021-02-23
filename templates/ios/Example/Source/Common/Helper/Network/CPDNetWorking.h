@@ -8,41 +8,42 @@
 
 #import <Foundation/Foundation.h>
 #import "CPDAPIMethod.h"
+#import <YKNetWorking/YKNetWorking.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CPDNetWorking : NSObject
+@interface CPDNetWorking : YKNetWorking
 
 #pragma mark -- 统一处理异常的方法 ,不会将Error返回给上层
-+ (HYBURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
++ (YKURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
                                   ApiMethod:(kSYTAPIMethod)method
                                 refreshCache:(BOOL)refreshCache
                                       params:(NSDictionary *)params
-success:(HYBResponseSuccess)success ;
+success:(YKResponseSuccess)success ;
 
-+ (HYBURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
++ (YKURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
                                   ApiMethod:(kSYTAPIMethod)method
                                 refreshCache:(BOOL)refreshCache
                                       params:(NSDictionary *)params
-success:(HYBResponseSuccess)success ;
+success:(YKResponseSuccess)success ;
  
 
 #pragma mark -- 单独获取异常
 
 
-+ (HYBURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
++ (YKURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
                                   ApiMethod:(kSYTAPIMethod)method
                                refreshCache:(BOOL)refreshCache
                                      params:(NSDictionary *)params
-                                    success:(HYBResponseSuccess)success
-fail:(HYBResponseFail)fail ;
+                                    success:(YKResponseSuccess)success
+fail:(YKResponseFail)fail ;
 
 
-+ (HYBURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
++ (YKURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
                                   ApiMethod:(kSYTAPIMethod)method
                                refreshCache:(BOOL)refreshCache
                                      params:(NSDictionary *)params
-                                    success:(HYBResponseSuccess)success
-fail:(HYBResponseFail)fail;
+                                    success:(YKResponseSuccess)success
+fail:(YKResponseFail)fail;
 
 @end
 

@@ -9,23 +9,23 @@
 #import "CPDNetWorking.h"
 
 @implementation CPDNetWorking
-+ (HYBURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
++ (YKURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
                                   ApiMethod:(kSYTAPIMethod)method
                                 refreshCache:(BOOL)refreshCache
                                       params:(NSDictionary *)params
-                                     success:(HYBResponseSuccess)success  {
+                                     success:(YKResponseSuccess)success  {
     return [self syt_postWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
         [MBProgressHUD hideHUD];
         [MBProgressHUD showErrorMessage:@"请求失败"];
     }];
 }
 
-+ (HYBURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
++ (YKURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
                                   ApiMethod:(kSYTAPIMethod)method
                                refreshCache:(BOOL)refreshCache
                                      params:(NSDictionary *)params
-                                    success:(HYBResponseSuccess)success
-                                       fail:(HYBResponseFail)fail {
+                                    success:(YKResponseSuccess)success
+                                       fail:(YKResponseFail)fail {
     NSString * url = [SYTAPIMethod apiMethodUrlWithAPIMethod:method apiClass:class];
     
     return [self postWithUrl:url
@@ -37,23 +37,23 @@
 }
 
  
-+ (HYBURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
++ (YKURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
                                   ApiMethod:(kSYTAPIMethod)method
                                 refreshCache:(BOOL)refreshCache
                                       params:(NSDictionary *)params
-                                     success:(HYBResponseSuccess)success  {
+                                     success:(YKResponseSuccess)success  {
     return [self syt_getWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
         [MBProgressHUD hideHUD];
         [MBProgressHUD showErrorMessage:@"请求失败"];
     }];
 }
 
-+ (HYBURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
++ (YKURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
                                   ApiMethod:(kSYTAPIMethod)method
                                refreshCache:(BOOL)refreshCache
                                      params:(NSDictionary *)params
-                                    success:(HYBResponseSuccess)success
-                                       fail:(HYBResponseFail)fail {
+                                    success:(YKResponseSuccess)success
+                                       fail:(YKResponseFail)fail {
     NSString * url = [SYTAPIMethod apiMethodUrlWithAPIMethod:method apiClass:class];
     
     return [self getWithUrl:url
@@ -63,5 +63,6 @@
                      success:success
                        fail:fail];
 }
+
 
 @end
