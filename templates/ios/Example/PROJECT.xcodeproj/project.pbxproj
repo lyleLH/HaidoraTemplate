@@ -39,6 +39,8 @@
 		C899F4C025E4F9B200A15F39 /* CPDNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F4BF25E4F9B200A15F39 /* CPDNetWorking.m */; };
 		C899F50425E50A2500A15F39 /* CPDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F50225E50A2500A15F39 /* CPDHomeViewController.m */; };
 		C899F50525E50A2500A15F39 /* CPDHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C899F50325E50A2500A15F39 /* CPDHomeViewController.xib */; };
+		C899F51925E50B9100A15F39 /* CPDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F51725E50B9100A15F39 /* CPDTestViewController.m */; };
+		C899F51A25E50B9100A15F39 /* CPDTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C899F51825E50B9100A15F39 /* CPDTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,9 @@
 		C899F50125E50A2500A15F39 /* CPDHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDHomeViewController.h; sourceTree = "<group>"; };
 		C899F50225E50A2500A15F39 /* CPDHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDHomeViewController.m; sourceTree = "<group>"; };
 		C899F50325E50A2500A15F39 /* CPDHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPDHomeViewController.xib; sourceTree = "<group>"; };
+		C899F51625E50B9100A15F39 /* CPDTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDTestViewController.h; sourceTree = "<group>"; };
+		C899F51725E50B9100A15F39 /* CPDTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDTestViewController.m; sourceTree = "<group>"; };
+		C899F51825E50B9100A15F39 /* CPDTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPDTestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +302,7 @@
 		AB23E00E1BA953B700F13CE2 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				C899F51525E50B7C00A15F39 /* TestPage */,
 				C899F4FF25E509F400A15F39 /* HomeModule */,
 				C841DAA225E381170083FFA3 /* Base */,
 				AB23E0261BA9557F00F13CE2 /* CPDLoginViewModule */,
@@ -417,6 +423,16 @@
 			path = HomePage;
 			sourceTree = "<group>";
 		};
+		C899F51525E50B7C00A15F39 /* TestPage */ = {
+			isa = PBXGroup;
+			children = (
+				C899F51625E50B9100A15F39 /* CPDTestViewController.h */,
+				C899F51725E50B9100A15F39 /* CPDTestViewController.m */,
+				C899F51825E50B9100A15F39 /* CPDTestViewController.xib */,
+			);
+			path = TestPage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -496,6 +512,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C899F51A25E50B9100A15F39 /* CPDTestViewController.xib in Resources */,
 				AB23DFC41BA94BAA00F13CE2 /* Localizable.strings in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				AB23DFC31BA94BAA00F13CE2 /* HaidoraRefresh.strings in Resources */,
@@ -553,6 +570,7 @@
 				AB23E0381BA955E300F13CE2 /* CPDLoginViewModel.m in Sources */,
 				C841DAD825E385510083FFA3 /* UIColor+CPDExtension.m in Sources */,
 				C841DAA825E381170083FFA3 /* BaseNavigationViewController.m in Sources */,
+				C899F51925E50B9100A15F39 /* CPDTestViewController.m in Sources */,
 				AB23E0181BA953B700F13CE2 /* PROJECTConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

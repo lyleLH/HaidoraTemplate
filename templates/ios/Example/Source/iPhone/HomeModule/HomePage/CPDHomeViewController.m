@@ -7,7 +7,7 @@
 //
 
 #import "CPDHomeViewController.h"
-
+#import "CPDTestViewController.h"
 @interface CPDHomeViewController ()
 
 @end
@@ -22,7 +22,7 @@
 
 
 - (IBAction)pushToNextPage:(id)sender {
-    UIViewController * vc = [[UIViewController alloc] init];
+    CPDTestViewController * vc = [[CPDTestViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
