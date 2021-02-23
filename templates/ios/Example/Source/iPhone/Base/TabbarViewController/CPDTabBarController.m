@@ -10,7 +10,7 @@
 #import "CPDTabBarController.h"
 #import "CPDNavigationViewController.h"
 #import "CPDViewController.h"
-
+#import "CPDHomeViewController.h"
 static CGFloat const CYLTabBarControllerHeight = 40.f;
 
 @implementation CPDTabBarController
@@ -47,9 +47,9 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
 
 - (NSArray *)viewControllersForTabBar {
     
-    CPDViewController *firstViewController = [[CPDViewController alloc] init];
-    UIViewController *firstNavigationController = [[CPDNavigationViewController alloc]
-                                                   initWithRootViewController:firstViewController];
+    CPDHomeViewController *homeViewController = [[CPDHomeViewController alloc] init];
+    UIViewController *homeNavigationController = [[CPDNavigationViewController alloc]
+                                                   initWithRootViewController:homeViewController];
     [firstViewController cyl_setHideNavigationBarSeparator:YES];
     [firstViewController cyl_setNavigationBarHidden:YES];
     firstViewController.navigationItem.title = [NSString stringWithFormat:@"SYTViewController Instance "];
@@ -68,7 +68,7 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
                                                    initWithRootViewController:fourthViewController];
     [fourthNavigationController cyl_setHideNavigationBarSeparator:YES];
     NSArray *viewControllers = @[
-                                 firstNavigationController,
+                                homeNavigationController,
                                  secondNavigationController,
                                  thirdNavigationController,
                                  fourthNavigationController

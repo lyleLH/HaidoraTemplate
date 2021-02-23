@@ -37,6 +37,8 @@
 		C899F48E25E4E9EB00A15F39 /* CPDAPIMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F48D25E4E9EA00A15F39 /* CPDAPIMethod.m */; };
 		C899F4AA25E4F0CB00A15F39 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C899F4A925E4F0CB00A15F39 /* WebKit.framework */; };
 		C899F4C025E4F9B200A15F39 /* CPDNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F4BF25E4F9B200A15F39 /* CPDNetWorking.m */; };
+		C899F50425E50A2500A15F39 /* CPDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F50225E50A2500A15F39 /* CPDHomeViewController.m */; };
+		C899F50525E50A2500A15F39 /* CPDHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C899F50325E50A2500A15F39 /* CPDHomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,9 @@
 		C899F4A925E4F0CB00A15F39 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C899F4BE25E4F9B200A15F39 /* CPDNetWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDNetWorking.h; sourceTree = "<group>"; };
 		C899F4BF25E4F9B200A15F39 /* CPDNetWorking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDNetWorking.m; sourceTree = "<group>"; };
+		C899F50125E50A2500A15F39 /* CPDHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDHomeViewController.h; sourceTree = "<group>"; };
+		C899F50225E50A2500A15F39 /* CPDHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDHomeViewController.m; sourceTree = "<group>"; };
+		C899F50325E50A2500A15F39 /* CPDHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPDHomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +297,7 @@
 		AB23E00E1BA953B700F13CE2 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				C899F4FF25E509F400A15F39 /* HomeModule */,
 				C841DAA225E381170083FFA3 /* Base */,
 				AB23E0261BA9557F00F13CE2 /* CPDLoginViewModule */,
 			);
@@ -393,6 +399,24 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		C899F4FF25E509F400A15F39 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				C899F50025E50A0300A15F39 /* HomePage */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		C899F50025E50A0300A15F39 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				C899F50125E50A2500A15F39 /* CPDHomeViewController.h */,
+				C899F50225E50A2500A15F39 /* CPDHomeViewController.m */,
+				C899F50325E50A2500A15F39 /* CPDHomeViewController.xib */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -477,6 +501,7 @@
 				AB23DFC31BA94BAA00F13CE2 /* HaidoraRefresh.strings in Resources */,
 				AB23DFC01BA94B4900F13CE2 /* LaunchScreen.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				C899F50525E50A2500A15F39 /* CPDHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +540,7 @@
 				C841DAB225E3821C0083FFA3 /* CPDNavigationViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
 				C841DAAD25E381B50083FFA3 /* CPDTabBarController.m in Sources */,
+				C899F50425E50A2500A15F39 /* CPDHomeViewController.m in Sources */,
 				AB23E0351BA955BA00F13CE2 /* CPDLoginViewController.m in Sources */,
 				C841DAB725E382560083FFA3 /* CPDViewController.m in Sources */,
 				AB23E01A1BA953B700F13CE2 /* PROJECTDateUtility.m in Sources */,
