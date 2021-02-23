@@ -34,6 +34,8 @@
 		C841DAB725E382560083FFA3 /* CPDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DAB625E382560083FFA3 /* CPDViewController.m */; };
 		C841DABC25E3826D0083FFA3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DABB25E3826D0083FFA3 /* BaseViewController.m */; };
 		C841DAD825E385510083FFA3 /* UIColor+CPDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DAD525E385510083FFA3 /* UIColor+CPDExtension.m */; };
+		C899F48325E4E91300A15F39 /* CPDNetWorkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F48225E4E91300A15F39 /* CPDNetWorkingManager.m */; };
+		C899F48E25E4E9EB00A15F39 /* CPDAPIMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F48D25E4E9EA00A15F39 /* CPDAPIMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +98,11 @@
 		C841DABB25E3826D0083FFA3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		C841DAD525E385510083FFA3 /* UIColor+CPDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CPDExtension.m"; sourceTree = "<group>"; };
 		C841DAD625E385510083FFA3 /* UIColor+CPDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CPDExtension.h"; sourceTree = "<group>"; };
-		C841DAD725E385510083FFA3 /* ShellProjectCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellProjectCategory.h; sourceTree = "<group>"; };
+		C841DAD725E385510083FFA3 /* PROJECTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROJECTCategory.h; sourceTree = "<group>"; };
+		C899F48125E4E91300A15F39 /* CPDNetWorkingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDNetWorkingManager.h; sourceTree = "<group>"; };
+		C899F48225E4E91300A15F39 /* CPDNetWorkingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDNetWorkingManager.m; sourceTree = "<group>"; };
+		C899F48C25E4E9EA00A15F39 /* CPDAPIMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDAPIMethod.h; sourceTree = "<group>"; };
+		C899F48D25E4E9EA00A15F39 /* CPDAPIMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDAPIMethod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,7 +230,7 @@
 		AB23DFF21BA953B700F13CE2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				C841DAD725E385510083FFA3 /* ShellProjectCategory.h */,
+				C841DAD725E385510083FFA3 /* PROJECTCategory.h */,
 				C841DAD625E385510083FFA3 /* UIColor+CPDExtension.h */,
 				C841DAD525E385510083FFA3 /* UIColor+CPDExtension.m */,
 			);
@@ -246,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				AB23DFF91BA953B700F13CE2 /* PROJECTHelper.h */,
+				C899F48025E4E8E100A15F39 /* Network */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -371,6 +378,17 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		C899F48025E4E8E100A15F39 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C899F48125E4E91300A15F39 /* CPDNetWorkingManager.h */,
+				C899F48225E4E91300A15F39 /* CPDNetWorkingManager.m */,
+				C899F48C25E4E9EA00A15F39 /* CPDAPIMethod.h */,
+				C899F48D25E4E9EA00A15F39 /* CPDAPIMethod.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -493,6 +511,7 @@
 				C841DAB225E3821C0083FFA3 /* CPDNavigationViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
 				C841DAAD25E381B50083FFA3 /* CPDTabBarController.m in Sources */,
+				C899F48325E4E91300A15F39 /* CPDNetWorkingManager.m in Sources */,
 				AB23E0351BA955BA00F13CE2 /* CPDLoginViewController.m in Sources */,
 				C841DAB725E382560083FFA3 /* CPDViewController.m in Sources */,
 				AB23E01A1BA953B700F13CE2 /* PROJECTDateUtility.m in Sources */,
@@ -500,6 +519,7 @@
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				AB23E01B1BA953B700F13CE2 /* PROJECTStringUtility.m in Sources */,
 				C841DABC25E3826D0083FFA3 /* BaseViewController.m in Sources */,
+				C899F48E25E4E9EB00A15F39 /* CPDAPIMethod.m in Sources */,
 				AB23E0381BA955E300F13CE2 /* CPDLoginViewModel.m in Sources */,
 				C841DAD825E385510083FFA3 /* UIColor+CPDExtension.m in Sources */,
 				C841DAA825E381170083FFA3 /* BaseNavigationViewController.m in Sources */,
