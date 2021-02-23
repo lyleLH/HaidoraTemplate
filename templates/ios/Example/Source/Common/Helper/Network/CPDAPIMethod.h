@@ -11,13 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-typedef NS_ENUM(NSUInteger, kSYTAPIClass) {
-    kSYTAPIClass_SalesmanManage,
+typedef NS_ENUM(NSUInteger, kCPDAPIClass) {
+    kCPDAPIClass_SalesmanManage,
      
 };
 
-typedef NS_ENUM(NSUInteger, kSYTAPIMethod) {
-    kSYTAPIMethod_SalesmanList,
+typedef NS_ENUM(NSUInteger, kCPDAPIMethod) {
+    kCPDAPIMethod_SalesmanList,
     
 };
 
@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger, kSYTAPIMethod) {
 @interface CPDAPIMethod : NSObject
 
 //根据 kSYTAPIClass 和 kSYTAPIMethod 来得到URL字符串
-+ (NSString *)apiUrlWithAPIMethod:(kSYTAPIMethod)apiMethod   apiClass:(kSYTAPIClass)class;
++ (NSString *)apiUrlWithAPIMethod:(kCPDAPIMethod)apiMethod   apiClass:(kCPDAPIClass)class;
 
 @end
 
