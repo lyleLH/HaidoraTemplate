@@ -12,7 +12,7 @@
  
 #pragma mark --
 #pragma mark -- public
-+ (NSString *)apiUrlWithAPIMethod:(kCPDAPIMethod)apiMethod   apiClass:(kCPDAPIClass)class   {
++ (NSString *)apiUrlWithAPIMethod:(kCPDAPIMethod)apiMethod   apiClass:(kCPDAPIClass)apiClass   {
     NSString * methodString  = @"";
     switch (apiMethod) {
         case kCPDAPIMethod_SalesmanList:

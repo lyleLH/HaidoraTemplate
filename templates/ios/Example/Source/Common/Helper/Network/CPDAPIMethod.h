@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger, kCPDAPIMethod) {
 @interface CPDAPIMethod : NSObject
 
 //根据 kSYTAPIClass 和 kSYTAPIMethod 来得到URL字符串
-+ (NSString *)apiUrlWithAPIMethod:(kCPDAPIMethod)apiMethod   apiClass:(kCPDAPIClass)class;
++ (NSString *)apiUrlWithAPIMethod:(kCPDAPIMethod)apiMethod   apiClass:(kCPDAPIClass)apiClass;
 
 @end
 
