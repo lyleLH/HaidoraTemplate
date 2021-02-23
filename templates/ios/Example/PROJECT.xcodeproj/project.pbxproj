@@ -36,6 +36,7 @@
 		C841DAD825E385510083FFA3 /* UIColor+CPDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C841DAD525E385510083FFA3 /* UIColor+CPDExtension.m */; };
 		C899F48325E4E91300A15F39 /* CPDNetWorkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F48225E4E91300A15F39 /* CPDNetWorkingManager.m */; };
 		C899F48E25E4E9EB00A15F39 /* CPDAPIMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F48D25E4E9EA00A15F39 /* CPDAPIMethod.m */; };
+		C899F4AA25E4F0CB00A15F39 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C899F4A925E4F0CB00A15F39 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		C899F48225E4E91300A15F39 /* CPDNetWorkingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDNetWorkingManager.m; sourceTree = "<group>"; };
 		C899F48C25E4E9EA00A15F39 /* CPDAPIMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDAPIMethod.h; sourceTree = "<group>"; };
 		C899F48D25E4E9EA00A15F39 /* CPDAPIMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDAPIMethod.m; sourceTree = "<group>"; };
+		C899F4A925E4F0CB00A15F39 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C899F4AD25E4F52600A15F39 /* CPDURLAddressProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDURLAddressProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				C899F4AA25E4F0CB00A15F39 /* WebKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +156,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C899F4A925E4F0CB00A15F39 /* WebKit.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -385,6 +390,7 @@
 				C899F48225E4E91300A15F39 /* CPDNetWorkingManager.m */,
 				C899F48C25E4E9EA00A15F39 /* CPDAPIMethod.h */,
 				C899F48D25E4E9EA00A15F39 /* CPDAPIMethod.m */,
+				C899F4AD25E4F52600A15F39 /* CPDURLAddressProtocol.h */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -598,7 +604,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -631,7 +637,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -646,6 +652,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PROJECT/PROJECT-Prefix.pch";
 				INFOPLIST_FILE = "PROJECT/PROJECT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -661,6 +668,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PROJECT/PROJECT-Prefix.pch";
 				INFOPLIST_FILE = "PROJECT/PROJECT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

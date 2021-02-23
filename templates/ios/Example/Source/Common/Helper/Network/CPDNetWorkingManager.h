@@ -7,10 +7,45 @@
 //
 
 #import <YKNetWorking.h>
-
+#import "CPDURLAddressProtocol.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CPDNetWorkingManager : NSObject
+@interface CPDNetWorkingManager : YKNetWorking
+
+@property (nonatomic,weak) id <CPDURLAddressProtocol> urlStringDelegate;
+
+#pragma mark -- 统一处理异常的方法
+- (HYBURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
+                                  ApiMethod:(kSYTAPIMethod)method
+                                refreshCache:(BOOL)refreshCache
+                                      params:(NSDictionary *)params
+success:(HYBResponseSuccess)success ;
+
+- (HYBURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
+                                  ApiMethod:(kSYTAPIMethod)method
+                                refreshCache:(BOOL)refreshCache
+                                      params:(NSDictionary *)params
+success:(HYBResponseSuccess)success ;
+ 
+
+#pragma mark -- 需要单独获取异常回调的方法
+
+
+- (HYBURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
+                                  ApiMethod:(kSYTAPIMethod)method
+                               refreshCache:(BOOL)refreshCache
+                                     params:(NSDictionary *)params
+                                    success:(HYBResponseSuccess)success
+fail:(HYBResponseFail)fail ;
+
+
+- (HYBURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
+                                  ApiMethod:(kSYTAPIMethod)method
+                               refreshCache:(BOOL)refreshCache
+                                     params:(NSDictionary *)params
+                                    success:(HYBResponseSuccess)success
+fail:(HYBResponseFail)fail;
+
 
 @end
 
