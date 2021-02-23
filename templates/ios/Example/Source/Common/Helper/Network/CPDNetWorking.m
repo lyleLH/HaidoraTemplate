@@ -15,8 +15,8 @@
                                       params:(NSDictionary *)params
                                      success:(YKResponseSuccess)success  {
     return [self syt_postWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
-        [MBProgressHUD hideHUD];
-        [MBProgressHUD showErrorMessage:@"请求失败"];
+//        [MBProgressHUD hideHUD];
+//        [MBProgressHUD showErrorMessage:@"请求失败"];
     }];
 }
 
@@ -26,7 +26,8 @@
                                      params:(NSDictionary *)params
                                     success:(YKResponseSuccess)success
                                        fail:(YKResponseFail)fail {
-    NSString * url = [SYTAPIMethod apiMethodUrlWithAPIMethod:method apiClass:class];
+    NSString * url = nil;
+//    NSString * url = [SYTAPIMethod apiMethodUrlWithAPIMethod:method apiClass:class];
     
     return [self postWithUrl:url
                 refreshCache:refreshCache
@@ -43,8 +44,8 @@
                                       params:(NSDictionary *)params
                                      success:(YKResponseSuccess)success  {
     return [self syt_getWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
-        [MBProgressHUD hideHUD];
-        [MBProgressHUD showErrorMessage:@"请求失败"];
+//        [MBProgressHUD hideHUD];
+//        [MBProgressHUD showErrorMessage:@"请求失败"];
     }];
 }
 
@@ -54,7 +55,9 @@
                                      params:(NSDictionary *)params
                                     success:(YKResponseSuccess)success
                                        fail:(YKResponseFail)fail {
-    NSString * url = [SYTAPIMethod apiMethodUrlWithAPIMethod:method apiClass:class];
+    NSString * url = nil;
+    
+//    NSString * url = [SYTAPIMethod apiMethodUrlWithAPIMethod:method apiClass:class];
     
     return [self getWithUrl:url
                 refreshCache:refreshCache
