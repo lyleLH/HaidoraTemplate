@@ -9,8 +9,8 @@
 #import "CPDNetWorking.h"
 
 @implementation CPDNetWorking
-+ (YKURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
-                                  ApiMethod:(kSYTAPIMethod)method
++ (YKURLSessionTask *)syt_postWithApiClass:(kCPDAPIClass)class
+                                  ApiMethod:(kCPDAPIMethod)method
                                 refreshCache:(BOOL)refreshCache
                                       params:(NSDictionary *)params
                                      success:(YKResponseSuccess)success  {
@@ -20,8 +20,8 @@
     }];
 }
 
-+ (YKURLSessionTask *)syt_postWithApiClass:(kSYTAPIClass)class
-                                  ApiMethod:(kSYTAPIMethod)method
++ (YKURLSessionTask *)syt_postWithApiClass:(kCPDAPIClass)class
+                                  ApiMethod:(kCPDAPIMethod)method
                                refreshCache:(BOOL)refreshCache
                                      params:(NSDictionary *)params
                                     success:(YKResponseSuccess)success
@@ -38,8 +38,8 @@
 }
 
  
-+ (YKURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
-                                  ApiMethod:(kSYTAPIMethod)method
++ (YKURLSessionTask *)syt_getWithApiClass:(kCPDAPIClass)class
+                                  ApiMethod:(kCPDAPIMethod)method
                                 refreshCache:(BOOL)refreshCache
                                       params:(NSDictionary *)params
                                      success:(YKResponseSuccess)success  {
@@ -49,8 +49,8 @@
     }];
 }
 
-+ (YKURLSessionTask *)syt_getWithApiClass:(kSYTAPIClass)class
-                                  ApiMethod:(kSYTAPIMethod)method
++ (YKURLSessionTask *)syt_getWithApiClass:(kCPDAPIClass)class
+                                  ApiMethod:(kCPDAPIMethod)method
                                refreshCache:(BOOL)refreshCache
                                      params:(NSDictionary *)params
                                     success:(YKResponseSuccess)success

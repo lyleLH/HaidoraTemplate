@@ -12,10 +12,10 @@
  
 #pragma mark --
 #pragma mark -- public
-+ (NSString *)apiUrlWithAPIMethod:(kSYTAPIMethod)apiMethod   apiClass:(kSYTAPIClass)class   {
++ (NSString *)apiUrlWithAPIMethod:(kCPDAPIMethod)apiMethod   apiClass:(kCPDAPIClass)class   {
     NSString * methodString  = @"";
     switch (apiMethod) {
-        case kSYTAPIMethod_SalesmanList:
+        case kCPDAPIMethod_SalesmanList:
         {
             methodString = @"list";
         }
@@ -48,10 +48,10 @@
 
 
 
-+ (NSString *)apiClassUrlWithAPIClass:(kSYTAPIClass) apiClass   {
++ (NSString *)apiClassUrlWithAPIClass:(kCPDAPIClass) apiClass   {
     NSString * classString  = @"";
     switch (apiClass) {
-        case kSYTAPIClass_SalesmanManage:
+        case kCPDAPIClass_SalesmanManage:
         {
             classString = @"v2/bd/";
         }
