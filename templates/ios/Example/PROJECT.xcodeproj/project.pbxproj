@@ -41,6 +41,7 @@
 		C899F50525E50A2500A15F39 /* CPDHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C899F50325E50A2500A15F39 /* CPDHomeViewController.xib */; };
 		C899F51925E50B9100A15F39 /* CPDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F51725E50B9100A15F39 /* CPDTestViewController.m */; };
 		C899F51A25E50B9100A15F39 /* CPDTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C899F51825E50B9100A15F39 /* CPDTestViewController.xib */; };
+		C8AD2FA325F23A5F00A288FD /* PROJECTDeviceUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AD2FA225F23A5F00A288FD /* PROJECTDeviceUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,9 @@
 		C899F51625E50B9100A15F39 /* CPDTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDTestViewController.h; sourceTree = "<group>"; };
 		C899F51725E50B9100A15F39 /* CPDTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDTestViewController.m; sourceTree = "<group>"; };
 		C899F51825E50B9100A15F39 /* CPDTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPDTestViewController.xib; sourceTree = "<group>"; };
+		C8AD2F9E25F234E000A288FD /* PROJECTUtilityMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROJECTUtilityMacros.h; sourceTree = "<group>"; };
+		C8AD2FA125F23A5F00A288FD /* PROJECTDeviceUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROJECTDeviceUtility.h; sourceTree = "<group>"; };
+		C8AD2FA225F23A5F00A288FD /* PROJECTDeviceUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROJECTDeviceUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,10 +287,13 @@
 			isa = PBXGroup;
 			children = (
 				AB23E0021BA953B700F13CE2 /* PROJECTUtility.h */,
+				C8AD2F9E25F234E000A288FD /* PROJECTUtilityMacros.h */,
 				AB23DFFE1BA953B700F13CE2 /* PROJECTDateUtility.h */,
 				AB23DFFF1BA953B700F13CE2 /* PROJECTDateUtility.m */,
 				AB23E0001BA953B700F13CE2 /* PROJECTStringUtility.h */,
 				AB23E0011BA953B700F13CE2 /* PROJECTStringUtility.m */,
+				C8AD2FA125F23A5F00A288FD /* PROJECTDeviceUtility.h */,
+				C8AD2FA225F23A5F00A288FD /* PROJECTDeviceUtility.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -567,6 +574,7 @@
 				C899F4C025E4F9B200A15F39 /* CPDNetWorking.m in Sources */,
 				C841DABC25E3826D0083FFA3 /* BaseViewController.m in Sources */,
 				C899F48E25E4E9EB00A15F39 /* CPDAPIMethod.m in Sources */,
+				C8AD2FA325F23A5F00A288FD /* PROJECTDeviceUtility.m in Sources */,
 				AB23E0381BA955E300F13CE2 /* CPDLoginViewModel.m in Sources */,
 				C841DAD825E385510083FFA3 /* UIColor+CPDExtension.m in Sources */,
 				C841DAA825E381170083FFA3 /* BaseNavigationViewController.m in Sources */,
