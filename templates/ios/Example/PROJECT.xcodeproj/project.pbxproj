@@ -42,6 +42,7 @@
 		C899F51925E50B9100A15F39 /* CPDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C899F51725E50B9100A15F39 /* CPDTestViewController.m */; };
 		C899F51A25E50B9100A15F39 /* CPDTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C899F51825E50B9100A15F39 /* CPDTestViewController.xib */; };
 		C8AD2FA325F23A5F00A288FD /* PROJECTDeviceUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AD2FA225F23A5F00A288FD /* PROJECTDeviceUtility.m */; };
+		C8AD2FC025F23F1E00A288FD /* PROJECTFontUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AD2FBF25F23F1E00A288FD /* PROJECTFontUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		C8AD2F9E25F234E000A288FD /* PROJECTUtilityMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROJECTUtilityMacros.h; sourceTree = "<group>"; };
 		C8AD2FA125F23A5F00A288FD /* PROJECTDeviceUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROJECTDeviceUtility.h; sourceTree = "<group>"; };
 		C8AD2FA225F23A5F00A288FD /* PROJECTDeviceUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROJECTDeviceUtility.m; sourceTree = "<group>"; };
+		C8AD2FBE25F23F1E00A288FD /* PROJECTFontUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PROJECTFontUtility.h; sourceTree = "<group>"; };
+		C8AD2FBF25F23F1E00A288FD /* PROJECTFontUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PROJECTFontUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +297,8 @@
 				AB23E0011BA953B700F13CE2 /* PROJECTStringUtility.m */,
 				C8AD2FA125F23A5F00A288FD /* PROJECTDeviceUtility.h */,
 				C8AD2FA225F23A5F00A288FD /* PROJECTDeviceUtility.m */,
+				C8AD2FBE25F23F1E00A288FD /* PROJECTFontUtility.h */,
+				C8AD2FBF25F23F1E00A288FD /* PROJECTFontUtility.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -566,6 +571,7 @@
 				C841DAAD25E381B50083FFA3 /* CPDTabBarController.m in Sources */,
 				C899F50425E50A2500A15F39 /* CPDHomeViewController.m in Sources */,
 				AB23E0351BA955BA00F13CE2 /* CPDLoginViewController.m in Sources */,
+				C8AD2FC025F23F1E00A288FD /* PROJECTFontUtility.m in Sources */,
 				C841DAB725E382560083FFA3 /* CPDViewController.m in Sources */,
 				AB23E01A1BA953B700F13CE2 /* PROJECTDateUtility.m in Sources */,
 				AB23E0191BA953B700F13CE2 /* PROJECTConstants.m in Sources */,

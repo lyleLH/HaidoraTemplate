@@ -80,10 +80,10 @@
 ////////////////////////////////////////////////////////////////
 
 
-#define N_R(value) _newFont(_sfmt(@"noto_regular,%d",value))
-#define N_M(value) _newFont(_sfmt(@"noto_medium,%d",value))
-#define N_D(value) _newFont(_sfmt(@"noto_demi,%d",value))
-#define N_B(value) _newFont(_sfmt(@"noto_bold,%d",value))
+#define N_R(value) [PROJECTFontUtility fontWithDescription:_sfmt(@"noto_regular,%d",value)]
+#define N_M(value) [PROJECTFontUtility fontWithDescription:_sfmt(@"noto_medium,%d",value)]
+#define N_D(value) [PROJECTFontUtility fontWithDescription:_sfmt(@"noto_demi,%d",value)]
+#define N_B(value) [PROJECTFontUtility fontWithDescription:_sfmt(@"noto_bold,%d",value)]
 
 #define D_B(value) [UIFont fontWithName:@"DIN-BOLD" size:value]
 #define D_M(value) [UIFont fontWithName:@"DIN-Medium" size:value]

@@ -15,5 +15,7 @@
 #import "PROJECTStringUtility.h"
 #import "PROJECTDateUtility.h"
 #import "PROJECTDeviceUtility.h"
+#import "PROJECTFontUtility.h"
+
 
 #endif
