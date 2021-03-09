@@ -148,6 +148,19 @@ typedef void(^CPDStringValueBlock)(BOOL value,NSString *string);
 typedef void(^CPDTextFieldBlock)(UITextField *TF,NSString *str);
 
 
+/* 线程操作宏 */
+#define CPD_ASYNC_MAIN(...) if ([NSThread isMainThread]) {\
+                                __VA_ARGS__\
+                            }else{\
+                                dispatch_async(dispatch_get_main_queue(), ^{\
+                                    __VA_ARGS__\
+                                });\
+                            }
+#define CPD_ASYNC_GLOBAL(...)  dispatch_async(dispatch_get_global_queue(0, 0), ^{\
+                                __VA_ARGS__\
+                              });
+
+
 ////////////////////////////////////////////////////////////////
 //MARK:-
 //MARK: Block相关-- end
