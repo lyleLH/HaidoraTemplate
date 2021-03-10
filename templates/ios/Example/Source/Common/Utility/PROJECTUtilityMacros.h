@@ -167,4 +167,39 @@ typedef void(^CPDTextFieldBlock)(UITextField *TF,NSString *str);
 //MARK:-
 ////////////////////////////////////////////////////////////////
 
+
+
+////////////////////////////////////////////////////////////////
+//MARK:-
+//MARK: LOG 相关
+//MARK:-
+////////////////////////////////////////////////////////////////
+
+
+
+
+#ifdef DEBUG
+#define CPDLog(s, ... ) NSLog( @"[%@ in line %d] ===============>%@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define CPDLog(s, ... )
+#endif
+
+#ifdef DEBUG
+#define CPD_DEBUG_CODE(...) do{\
+                                __VA_ARGS__\
+                            }while (0);
+#else
+#define CPD_DEBUG_CODE(...)
+#endif
+
+
+////////////////////////////////////////////////////////////////
+//MARK:-
+//MARK: LOG 相关 -- end
+//MARK:-
+////////////////////////////////////////////////////////////////
+
+
+
+
 #endif /* PROJECTUtilityMacros_h */
