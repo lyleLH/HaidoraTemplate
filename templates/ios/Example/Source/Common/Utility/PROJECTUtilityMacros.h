@@ -179,7 +179,7 @@ typedef void(^CPDTextFieldBlock)(UITextField *TF,NSString *str);
 
 
 #ifdef DEBUG
-#define CPDLog(s, ... ) NSLog( @"[%@ in line %d] ===============>%@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#define CPDLog(s, ... ) NSLog( @"\n -->[%@ in line %d %s]--> \n\n\n\n      %@\n\n\n\n <---", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, __PRETTY_FUNCTION__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 #else
 #define CPDLog(s, ... )
 #endif
