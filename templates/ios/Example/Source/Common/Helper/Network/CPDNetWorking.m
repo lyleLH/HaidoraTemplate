@@ -9,18 +9,18 @@
 #import "CPDNetWorking.h"
 
 @implementation CPDNetWorking
-+ (YKURLSessionTask *)syt_postWithApiClass:(kCPDAPIClass)class
++ (YKURLSessionTask *)postWithApiClass:(kCPDAPIClass)class
                                   ApiMethod:(kCPDAPIMethod)method
                                 refreshCache:(BOOL)refreshCache
                                       params:(NSDictionary *)params
                                      success:(YKResponseSuccess)success  {
-    return [self syt_postWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
+    return [self postWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
 //        [MBProgressHUD hideHUD];
 //        [MBProgressHUD showErrorMessage:@"请求失败"];
     }];
 }
 
-+ (YKURLSessionTask *)syt_postWithApiClass:(kCPDAPIClass)class
++ (YKURLSessionTask *)postWithApiClass:(kCPDAPIClass)class
                                   ApiMethod:(kCPDAPIMethod)method
                                refreshCache:(BOOL)refreshCache
                                      params:(NSDictionary *)params
@@ -38,18 +38,18 @@
 }
 
  
-+ (YKURLSessionTask *)syt_getWithApiClass:(kCPDAPIClass)class
++ (YKURLSessionTask *)getWithApiClass:(kCPDAPIClass)class
                                   ApiMethod:(kCPDAPIMethod)method
                                 refreshCache:(BOOL)refreshCache
                                       params:(NSDictionary *)params
                                      success:(YKResponseSuccess)success  {
-    return [self syt_getWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
+    return [self getWithApiClass:class ApiMethod:method refreshCache:refreshCache params:params success:success fail:^(NSError *error) {
 //        [MBProgressHUD hideHUD];
 //        [MBProgressHUD showErrorMessage:@"请求失败"];
     }];
 }
 
-+ (YKURLSessionTask *)syt_getWithApiClass:(kCPDAPIClass)class
++ (YKURLSessionTask *)getWithApiClass:(kCPDAPIClass)class
                                   ApiMethod:(kCPDAPIMethod)method
                                refreshCache:(BOOL)refreshCache
                                      params:(NSDictionary *)params

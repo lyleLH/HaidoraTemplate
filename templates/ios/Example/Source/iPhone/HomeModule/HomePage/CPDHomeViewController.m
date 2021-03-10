@@ -18,7 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    CPD_DEBUG_CODE({
+        NSLog(@"%@", [NSString stringWithFormat:@"123"]);
+    })
+    CPDLog(@"viewDidLoad");
 }
 
 
